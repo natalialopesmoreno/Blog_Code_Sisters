@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "dbadbee0-5807-41b3-9e6c-39192c4ab12d",
+		"name": "Blog_Pessoal_Postagem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAll_postagem",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"titulo\": \"Generation_41\",\r\n        \"autor\": \"Nati\",\r\n        \"descricao\": \"Postagem diária: Contrução de uma REST API\",\r\n        \"data\": \"2020-11-03T00:00:00.000+00:00\",\r\n        \"id\": 1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/postagem",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetId_postagem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/postagem/8",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagem",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_Postagem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\":\"Back-End\",\r\n    \"autor\": \"Nati\",\r\n    \"descricao\":\"Java é top, muito bom ,melhor linguagem\",\r\n    \"tema\": {\r\n        \"id_tema\": 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/postagem",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Postagem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/postagem/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagem",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put_Postagem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\":\"Back-End\",\r\n    \"autor\": \"Nati123\",\r\n    \"descricao\":\"Java é muito bom \",\r\n    \"tema\": {\r\n        \"id_tema\": 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/postagem/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"postagem",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "d2d64e4f-eed0-4d03-b773-340984d214d1",
+		"name": "Blog_Pessoal_Tema",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post_Tema",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n       \r\n        \"nome\": \"Esportes\",\r\n        \"descricao\": \"Uma secção que aborada reflexões e relatos com a temática esportiva\"\r\n        \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/tema",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tema"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Tema",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/tema",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tema"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_TemaId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/tema/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tema",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Tema",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/tema/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tema",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put_tema",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"nome\": \"Esportes\",\r\n        \"descricao\": \"Uma secção que aborada reflexões e relatos com a temática esportiva e lazer venha se divertir e descansar\"\r\n        \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/tema/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tema",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
